@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Odeme</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <!-- NAVBAR START -->
+    <div class="nav-container">
+      <div class="container header">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 bg-white">
+            <nav class="navbar navbar-expand-lg bg-white">
+              <div class="container-fluid d-flex justify-content-center">
+                <a class="navbar-brand fs-4" href="#"
+                  ><strong class="text-white p-1">YENİGÜN</strong> Online</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- NAVBAR END -->
+
+    <!-- SECTION-1 START -->
+    <div class="container w-100">
+      <div class="row">
+        <div class="col-md-12 col-lg-7 text-center text-lg-start mt-5">
+          <h1 class="guvenli-odeme-h1 pb-1">Güvenli Ödeme Sayfası</h1>
+        </div>
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        <!-- Left -->
+        <div class="col-md-12 col-lg-6 mb-3 mb-lg-0">
+          <form class="pay-form ms-auto" action="#">
+            <div class="mb-3">
+              <label class="w-25" for="isim">İsim Soyisim*</label>
+              <input class="" type="text" name="isim" id="isim" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="w-25" for="email">e-Posta*</label>
+              <input class="" type="email" name="email" id="email" required />
+            </div>
+
+            <div class="mb-3">
+              <label class="w-25" for="cardnumber">Kart No*</label>
+              <input
+                class="cc-number-input"
+                maxlength="19"
+                type="text"
+                name="cardnumber"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="w-25" for="text">Kart Üzerindeki İsim*</label>
+              <input class="" type="text" name="text" required />
+            </div>
+
+            <div class="mb-3 d-flex d-lg-block flex-column">
+              <label class="w-25" for="expireDate">Son Kullanma Tarihi*</label>
+              <input
+                class="w-25 cc-expiry-input"
+                maxlength="5"
+                type="text"
+                name="expireDate"
+                placeholder="Ay / Yıl"
+                required
+              />
+            </div>
+
+            <div class="mb-3 d-flex d-lg-block flex-column position-relative">
+              <label class="w-25" for="cvc">Güvenlik Kodu*</label>
+
+              <input
+                class="w-25 me-2 cc-cvc-input"
+                type="text"
+                maxlength="3"
+                name="cvc"
+                placeholder="CVC/CVV"
+                required
+                onkeypress="return isNumberKey(event)"
+              />
+              <img
+                class="soru-isareti"
+                src="img/soru-isareti.png"
+                alt="soru-isareti"
+                data-bs-toggle="tooltip"
+                data-bs-placement="top"
+                data-bs-title="Kartınızın Arka Kısmında Bulunan 3 Haneli Güvenlik Kodu"
+              />
+            </div>
+            <div class="mt-2">
+              <button class="btn ps-3 pe-3">Onayla</button>
+            </div>
+          </form>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div class="col-md-12 col-lg-6 mt-5">
+          <div
+            class="bg-white p-4 text-start ms-4 fs-5 buy odeme d-flex justify-content-between align-items-center"
+          >
+            <span class="small">Yenigün e-gazete Aylık Abonelik</span>
+            <span class="text-end">20.00 TL</span>
+          </div>
+
+          <div class="d-flex flex-row-reverse mt-5 ms-4 pe-5">
+            <div class="text-end">
+              <p>20.00 TL</p>
+              <p>3.60 TL</p>
+              <p><strong>23.60 TL</strong></p>
+            </div>
+
+            <div class="me-5 text-end ms-4">
+              <p>Toplam Tutar</p>
+              <p>KDV (%18)</p>
+              <p><strong>Genel Toplam</strong></p>
+            </div>
+          </div>
+          <div class="ms-4 mt-5">
+            <p>
+              e-Gazete aboneliği olanlar sadece son 30 günlük gazeteyi
+              okuyabilirler.
+            </p>
+            <p>
+              Gazete sayfası veya kupür indirmek için PDF paketleri kapsamında
+              PDF paket tanımı gerekmektedir.
+            </p>
+          </div>
+
+          <!-- Checkbox Start -->
+          <div class="form-check mb-2 mt-4">
+            <input
+              class="form-check-input me-2"
+              type="checkbox"
+              name="checkbox1"
+            />
+            <label class="form-check-label" for="checkbox1">
+              Web Site’nin
+              <a class="text-black fw-bold text-decoration-none" href="#"
+                >Mesafeli Satış Sözleşmesini</a
+              >
+              Okudum ve Kabul Ediyorum.
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input me-2"
+              type="checkbox"
+              name="checkbox2"
+            />
+            <label class="form-check-label" for="checkbox2">
+              Web Site’nin
+              <a class="text-black fw-bold text-decoration-none" href="#"
+                >Güvenlik ve Gizlilik Sözleşmesini</a
+              >
+              Okudum ve Kabul Ediyorum.
+            </label>
+          </div>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input me-2"
+              type="checkbox"
+              name="checkbox3"
+            />
+            <label class="form-check-label" for="checkbox3">
+              Kredi Kartı Bilgilerimin Güvenli Ortamda Kaydedilmesini Kabul
+              Ediyorum.
+            </label>
+          </div>
+          <!-- Checkbox End-->
+          <div class="mt-4 text-center text-lg-start">
+            <img
+              class="img-fluid"
+              src="img/guvenli-alisveris.png"
+              alt="guvenli-alisveris"
+            />
+          </div>
+        </div>
+        <!-- Right -->
+      </div>
+    </div>
+
+    <!-- SECTION-1 END -->
+
+    <!-- FOOTER START -->
+    <div class="bg-white mt-5">
+      <div class="container">
+        <div class="footer pb-5">
+          <div class="row pt-4 d-sm-flex justify-content-sm-center">
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <h4 class="ms-3 mb-md-4">KURUMSAL</h4>
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#">Gazete Yenigün</a></li>
+                <li class="list-group-item"><a href="#">Üye Ol</a></li>
+                <li class="list-group-item"><a href="#">Abonelik</a></li>
+                <li class="list-group-item"><a href="#">Arşiv</a></li>
+                <li class="list-group-item">
+                  <a href="#">Sıkça Sorulan Sorular (s.s.s)</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Mesafeli Satış Sözleşmesi</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Gizlilik ve Güvenlik</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#">İptal ve İade Koşulları</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Kişisel Veriler Politikası</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h4 class="mb-4 text-center text-lg-start">SOSYAL MEDYA</h4>
+              <div
+                class="pt-md-2 d-flex justify-content-center ms-md-5 d-lg-block ms-lg-0"
+              >
+                <div>
+                  <i class="fa-brands fa-square-facebook social-media"></i>
+                  <i class="fa-brands fa-square-twitter social-media"></i>
+                </div>
+                <div>
+                  <i class="fa-brands fa-square-instagram social-media"></i>
+                  <i class="fa-solid fa-share-nodes social-media"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-5 mt-md-5 mt-lg-2">
+              <form class="d-flex flex-column homepage-form" action="#">
+                <input type="text" name="name" placeholder="Adınız *" />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-Posta Adresiniz *"
+                />
+                <textarea
+                  class="mesaj"
+                  name="text"
+                  placeholder="Mesajınız *"
+                ></textarea>
+              </form>
+              <button class="btn btn-form float-md-start float-lg-end">
+                Gönder
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER END -->
+
+    <!-- COPYRIGHT START -->
+    <div class="copyright bottom-0 pt-3">
+      <div class="container">
+        <p class="text-center">
+          <i class="fa-solid fa-copyright"></i>
+          Gazete Yenigün. Tüm Hakları Saklıdır.
+        </p>
+      </div>
+    </div>
+    <!-- COPYRIGHT END -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/input-mask.js"></script>
+  </body>
+</html>
