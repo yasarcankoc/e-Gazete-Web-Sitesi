@@ -1,0 +1,399 @@
+:root {
+  --primary-color: #e11f1c;
+  --secondary-color: #eef1f6;
+  --hover-color: #bcbbbb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+.section-bg {
+  background-color: var(--secondary-color);
+}
+
+/* NAVBAR START */
+/* .header,
+nav {
+  background-color: var(--secondary-color) !important;
+} */
+
+.nav-container {
+  background-color: white;
+  border-bottom: 1px solid var(--hover-color);
+}
+
+.navbar-brand > strong {
+  background-color: var(--primary-color);
+}
+
+.fa-user {
+  cursor: pointer;
+}
+/* NAVBAR END */
+
+/* SECTION 1 START */
+@media only screen and (min-width: 992px) {
+  .section1 {
+    margin-bottom: 17rem !important;
+  }
+}
+
+.img-tel {
+  z-index: -1;
+  position: absolute;
+  width: 70%;
+  height: 600px;
+  top: 10px;
+  right: -55px;
+}
+
+.img-daire {
+  width: 60%;
+  height: 450px;
+  z-index: -5;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+
+/* SECTION 1 END */
+
+.btn {
+  color: #fff;
+  border: none;
+  background-color: var(--primary-color);
+}
+
+.btn:focus {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #df3e3b;
+}
+
+button {
+  border-radius: 20px;
+}
+
+/* SECTION-2 START */
+
+.section2-h1 {
+  border-bottom: 2px solid var(--primary-color);
+  text-align: center;
+  width: max-content;
+}
+
+.subscribe {
+  background-color: var(--secondary-color);
+}
+
+.description {
+  height: 300px;
+}
+
+.buy {
+  border-top: 1px solid var(--hover-color);
+  border-right: 1px solid var(--hover-color);
+  border-bottom: 1px solid var(--hover-color);
+  border-left: 3px solid var(--primary-color);
+}
+/* SECTION-2 END */
+
+/* SECTION-3 START */
+#date {
+  border-radius: 10px;
+}
+
+.section3-h1 {
+  border-bottom: 2px solid var(--primary-color);
+  width: max-content;
+}
+
+.section3-h3 {
+  background-color: var(--primary-color);
+}
+
+/* LARGE */
+@media only screen and (min-width: 992px) {
+  h3 {
+    width: 57%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h3 {
+    width: 42%;
+  }
+}
+
+/* SECTION-3 END */
+
+/* FOOTER START */
+
+li a {
+  color: #4e506c;
+  border: none;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #4e506c;
+  text-decoration: underline;
+}
+
+.list-group-item {
+  color: black;
+  border: none;
+}
+
+.social-media {
+  font-size: 3rem;
+  padding-left: 5px;
+  margin: 0 20px 10px 0;
+  cursor: pointer;
+}
+
+.fa-square-facebook {
+  color: #43609c;
+}
+
+.fa-square-twitter {
+  color: #4ca1de;
+}
+
+.fa-square-instagram {
+  color: #921b89;
+}
+
+.homepage-form > input,
+textarea {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--secondary-color);
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.homepage-form > input::placeholder,
+textarea::placeholder {
+  color: black;
+}
+
+.mesaj {
+  height: 250px;
+}
+
+.btn-form {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.btn-form:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+/* FOOTER END */
+
+/* COPYRIGHT START */
+.copyright {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-bottom: 1px;
+}
+/* COPYRIGHT END */
+
+/* --- LOGIN PAGE START --- */
+.login-h1 {
+  border-bottom: 2px solid var(--primary-color);
+  width: 40%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .login-h1 {
+    width: 45%;
+  }
+}
+
+.register {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.register:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.login-footer {
+  background-color: var(--secondary-color);
+}
+
+.login-form {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.login-form::placeholder {
+  color: grey;
+}
+
+.login-ul > li {
+  background-color: var(--secondary-color);
+}
+
+.lgn-btn-form {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+/* --- LOGIN PAGE END --- */
+
+/* SEPET START */
+
+.sepet-h1 {
+  border-bottom: 2px solid var(--primary-color);
+  width: max-content;
+}
+
+@media only screen and (min-width: 992px) {
+  .sepet-h1 {
+    width: max-content;
+  }
+}
+
+.yayin {
+  border-radius: 5px;
+  padding: 30px 15px 0px !important;
+  border: 1px solid var(--primary-color);
+}
+
+.tbl-yayin tbody tr td {
+  color: #585b69;
+}
+
+.fa-download {
+  color: var(--primary-color);
+}
+
+.fa-download:hover {
+  color: black;
+}
+
+.page-link {
+  color: black;
+}
+
+.page-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.tbl-abone {
+  border-collapse: collapse;
+}
+
+.tbl-abone td {
+  border: none;
+}
+
+.time {
+  color: var(--primary-color);
+}
+
+.btn-iptal {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-iptal:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* SEPET END */
+
+/* ODEME START */
+
+.guvenli-odeme-h1 {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+@media only screen and (min-width: 992px) {
+  .guvenli-odeme-h1 {
+    width: 73%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .guvenli-odeme-h1 {
+    width: 56%;
+  }
+}
+.pay-form div input {
+  width: 400px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .pay-form div input {
+    width: 100%;
+  }
+}
+
+.pay-form div input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.pay-form div label {
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .pay-form div label {
+    width: max-content !important;
+    width: 50% !important;
+  }
+}
+
+.soru-isareti {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+  .soru-isareti {
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    width: 1.5rem;
+  }
+}
+
+.odeme {
+  width: 90%;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bs-primary);
+}
+/* ODEME END */
